@@ -80,7 +80,7 @@ public class Temperature {
                            break;
           case CELSIUS:    convertedValue = value - 273.15;
                            break;
-          case FAHRENHEIT: convertedValue = value * 9.0/5.0 - 459.67;
+          case FAHRENHEIT: convertedValue = (value - 459.67)* 9.0/5.0;
                            break;
           default:         throw new IllegalArgumentException();
       }
